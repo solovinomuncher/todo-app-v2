@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main-v3.js" defer></script>
+    <title>Todo App</title>
+</head>
+<body>
+    <header>
+        <h1>Todo App</h1>
+    </header>
+    <main class="main">
+        <section class="project-list-section">
+            <h2>Project List</h2>
+            <div class="project-list">
+                <p class="project-list__project">TITLE</p>
+                <p class="project-list__project">TITLE</p>
+                <p class="project-list__project">TITLE</p>
+            </div>
+            <div class="project-create">
+                <button class="btn-delete-project">DELETE SELECTED</button>
+                <label for="input-create-project">CREATE PROJECT</label>
+                <input type="text" id="input-create-project">
+                <button class="btn-create-project">CREATE</button>
+                <div>
+                    <label for="input-edit-project">CHANGE PROJECT TITLE</label>
+                    <input type="text" id="input-edit-project"><br>
+                    <button class="btn-edit-project">EDIT SELECTED</button>
+                </div>
+            </div>
+        </section>
+        <section class="todo-list-section">
+            <h2>Todo List</h2>
+            <div class="todo-list">
+                <div class="todo-list__todo">
+                    <p class="todo__title">TITLE</p>
+                    <p class="todo__duedate">DUE DATE</p>
+                </div>
+                <div class="todo-list__todo">
+                    <p class="todo__title">TITLE</p>
+                    <p class="todo__duedate">DUE DATE</p>
+                </div>
+                <div class="todo-list__todo">
+                    <p class="todo__title">TITLE</p>
+                    <p class="todo__duedate">DUE DATE</p>
+                </div>
+            </div>
+            <button class="btn-delete-todo">DELETE SELECTED</button>
+        </section>
+        <section class="todo-view-section">
+            <h2>Todo View</h2>
+            <div class="todo-view">
+                <p class="todo-view__title">TITLE</p>
+                <p class="todo-view__duedate">DUE DATE</p>
+                <p class="todo-view__priority">PRIORITY</p>
+                <p class="todo-view__desc">DESC</p>
+            </div>
+            <div class="todo-create">
+                <label for="input-create-todo__title">TITLE</label>
+                <input type="text" id="input-create-todo__title">
+                <label for="input-create-todo__duedate">DUEDATE</label>
+                <input type="text" id="input-create-todo__duedate">
+                <label for="input-create-todo__priority">PRIORITY</label>
+                <select name="priority" id="input-create-todo__priority">
+                    <option value="high">HIGH</option>
+                    <option value="med">MEDIUM</option>
+                    <option value="low">LOW</option>
+                </select>
+                <label for="input-create-todo__desc">DESCRIPTION</label>
+                <input type="text" id="input-create-todo__desc">
+                <button class="btn-create-todo">CREATE</button>
+                <button class="btn-edit-todo">EDIT SELECTED</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><small>Copyright by Erick Esqueda. All Rights Reserved.</small></p>
+    </footer>
+</body>
+</html>

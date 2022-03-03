@@ -1,0 +1,237 @@
+/* reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* main styling */
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: lightcyan;
+  border-bottom: 1px solid black;
+}
+
+/* project list section */
+.project-list-section,
+.todo-list-section,
+.todo-view-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.project-list {
+  display: grid;
+  padding: 10px;
+}
+
+.project-list__project {
+  justify-self: center;
+  border: 1px solid black;
+  padding: 10px;
+  width: 80%;
+  height: 1em;
+}
+
+.project-create {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.project-create input {
+  justify-self: center;
+  width: 80%;
+}
+
+.project-create button {
+  justify-self: center;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+/* todo list section */
+.todo-list {
+  display: grid;
+  padding: 10px;
+}
+
+.todo-list__todo {
+  justify-self: center;
+  border: 1px solid black;
+  padding: 10px;
+  width: 80%;
+  height: 2em;
+}
+
+.selected-project,
+.selected-todo,
+.todo-view {
+  background: lightblue;
+}
+
+/* todo view section */
+.todo-view {
+  border: 1px solid black;
+  display: grid;
+  padding: 10px;
+  margin: 10px;
+  gap: 10px;
+}
+
+.todo-create {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.todo-create input,
+.todo-create select {
+  justify-self: center;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.todo-create button {
+  justify-self: center;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
