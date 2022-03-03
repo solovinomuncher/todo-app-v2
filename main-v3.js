@@ -120,7 +120,6 @@ const findProject = (title) => {
 
 // setting defaults
 let projectArray = [];
-processRawProjects();
 
 let defaultProject = createProject("My Project");
 let defaultTodo = createTodo("My Todo", 1, "Todo description", "med");
@@ -129,6 +128,8 @@ defaultProject.addTodo(defaultTodo);
 
 let selectedProject = defaultProject;
 let selectedTodo = defaultTodo;
+
+processRawProjects();
 
 // DOM related functions
 const removeAllChildNodes = (parent) => {
